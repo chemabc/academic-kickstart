@@ -1,0 +1,11 @@
+<div id="codeFile">
+
+
+<h3> Código del archivo <code>{{.Get `file`}}</code>:</h3>
+{{ $staticPath := .Get "staticPath" }}
+{{ $file := .Get "file" }}
+{{ $lang := .Get "language" }}
+
+{{ $path := (printf "%s%s" $staticPath  $file) | readFile }}
+{{ (print "```" $lang "\n" $path "\n```") | markdownify }}
+</div>

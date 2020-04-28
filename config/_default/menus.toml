@@ -3,30 +3,67 @@
 #     desired widget in your `content/home/` folder.
 #   The weight parameter defines the order that the links will appear in.
 
+
+# [[main]]
+#   name = "Sobre mí"
+#   url = "#about"
+#   weight = 20
+#[[main]]
+  # name = "Inicio"
+  # url = "/"
+  # weight = 1
+
+#Para hacer submenus: https://sourcethemes.com/academic/docs/get-started/#menu
 [[main]]
-  name = "Home"
-  url = "#about"
-  weight = 10
+   name = "Destacados"
+   url = "#featured"
+   weight = 9
 
 [[main]]
-  name = "Posts"
-  url = "#posts"
+   name = "Artículos"
+   url = "/blogWidget"
+   weight = 10
+
+
+[[main]]
+  name = "Proyectos"
+  url = "#projects"
   weight = 20
 
 [[main]]
-  name = "Projects"
-  url = "#projects"
-  weight = 30
+   name = "Vídeos"
+   url = "#videos"
+   weight = 30
+
 
 [[main]]
-  name = "Publications"
-  url = "#featured"
-  weight = 40
+   identifier="cursos"
+   name = "Cursos"
+   weight = 40
+   url ="/cursos"
 
 [[main]]
-  name = "Contact"
-  url = "#contact"
-  weight = 60
+   name = "Publicaciones"
+   url = "#publication"
+   weight = 50
+
+
+[[main]]
+   name = "Ficciones"
+   url = "#ficciones"
+   weight = 60
+
+# [[main]]
+#   name = "CV"
+#   url = "cv"
+#   weight = 70
+
+[[main]]
+   name = "Contacto"
+   url = "/about"
+   weight = 80
+
+
 
 # Link to a PDF of your resume/CV from the menu.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
